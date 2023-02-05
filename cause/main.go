@@ -8,7 +8,7 @@ import (
 	"time"
 )
 
-var ErrFailure = fmt.Errorf("request took too")
+var ErrFailure = fmt.Errorf("request took too long")
 
 func main() {
 	ctx, cancel := context.WithTimeout(context.Background(), 1*time.Millisecond)
